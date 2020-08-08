@@ -1,0 +1,25 @@
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <h1>Register</h1>
+
+        <form method="post" action="/register">
+            First Name: <input type="text" name = "firstName" required/>
+            Last Name: <input type="text" name = "lastName" required/>
+            Email : <input type="text" name="email" required/>
+            Password : <input type="password" name="password" required/>
+            <input type="hidden" name="_csrf" value="csrfToken">
+        <input type="submit" />
+        </form>
+
+        <br><a href="/register">register</a><br>
+        <a href="/login">login</a><br>
+        <a href="/dashboard">dashboard</a><br>
+        <a href="/base">base</a><br>
+        <a href="/index">Index</a><br>
+
+    </body>
+</html>

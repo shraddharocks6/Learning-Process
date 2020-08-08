@@ -1,0 +1,20 @@
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <h1>LogIn</h1>
+        <a href="/register">register</a><br>
+        <a href="/login">login</a><br>
+        <a href="/dashboard">dashboard</a><br>
+        <a href="/base">base</a><br>
+        <a href="/index">Index</a><br>
+        <br><br>
+        <form method="post" action="/login">
+            Email : <input type="text" name="email" required/>
+            Password : <input type="password" name="password" required/>
+            <input type="hidden" name="_csrf" value="csrfToken">
+        <input type="submit" />
+    </body>
+</html>
