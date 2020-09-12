@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Hello_World",
+  "version": "1.0",
+  "description": "A hello world extension !",
+  "icons": {
+    "128": "hello128.png",
+    "48": "hello32.png",
+    "16": "hello16.png"
+  },
+  "browser_action": {
+    "default_icon": "hello32.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "css": ["bootstrap.min.css"],
+      "js": ["jquery.min.js", "bootstrap.min.js", "contentscript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["contextMenus"],
+  "web_accessible_resources": [
+    "modal.html",
+    "modal.js",
+    "bootstrap.min.js",
+    "bootstrap.min.css"
+  ]
+}
